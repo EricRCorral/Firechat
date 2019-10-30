@@ -1,0 +1,55 @@
+.puntero {
+    cursor: pointer;
+}
+
+.chat-window {
+    border: 3px solid rgba(252, 255, 242, 0.384);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.app-mensajes {
+    overflow-y: scroll;
+    max-height: 380px;
+}
+
+.background {
+    background-image: url(assets/images/chat-background.jpg);
+    background-size: cover;
+}
+
+.firechat {
+    font-size: 350%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: black 2px 2px;
+}
+
+
+/* Animaciones */
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fast {
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}

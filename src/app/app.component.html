@@ -1,0 +1,20 @@
+<div *ngIf="cs.usuario.uid" class="animated fadeIn pb-3">
+    <div class="col-md-12 text-right">
+        <button type="button" class="btn btn-danger mt-1" (click)="cs.logout()">
+            Salir del chat
+        </button>
+    </div>
+    <h1 class="text-center firechat">Firechat</h1>
+    <div class="container animated fadeIn">
+        <h2 class="text-center">¡ Bienvenid@ ! en el chat se mostraran los ultimos 20 mensajes que hayan sido enviados, a la izquierda, con el nombre en verde, apareceran los mensajes de otros usuarios y a la derecha, nombre en azul, los suyos.</h2>
+        <div class="chat-window">
+            <app-chat></app-chat>
+        </div>
+    </div>
+</div>
+<div *ngIf="!cs.usuario.uid" class="animated fadeIn">
+    <div class="container animated fadeIn">
+        <h1 class="text-center firechat">Firechat</h1>
+        <app-login></app-login>
+    </div>
+</div>
